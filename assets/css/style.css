@@ -1538,5 +1538,13 @@ footer {
     position: absolute;
     left: 20px;
 }
+#services .provide {
+    width: 100%;
+    padding: 10px;
+  }
+  .item h3 {
+    text-align: center;
+    font-size: 12px;
+  }
     
 }
