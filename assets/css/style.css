@@ -1346,7 +1346,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 430px) {   
+@media only screen and (max-width: 300px) {   
     nav img {
         width: 40%;
     }
@@ -1403,6 +1403,44 @@ footer {
     #services .doctor {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+    .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: black;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 black;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 black
+    }
+
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: black;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
     }
 
     .all-services {
@@ -1485,6 +1523,20 @@ footer {
         width: 100%;
         margin: 10px 0;
     }
-
+.body_form{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.body_form input,select,textarea{
+    margin: auto;
+}
+.body_form label{
+    margin-left: 20px;
+}
+.body_form select{
+    position: absolute;
+    left: 20px;
+}
     
 }
